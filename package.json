@@ -17,5 +17,9 @@
     "vue": "^3.5.22",
     "vue-router": "^4.6.3"
   },
-  "packageManager": "yarn@4.10.3"
+  "packageManager": "yarn@4.10.3",
+  "devDependencies": {
+    "@iconify-json/fluent-emoji": "^1.2.7",
+    "@iconify-json/tabler": "^1.2.23"
+  }
 }

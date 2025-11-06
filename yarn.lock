@@ -573,6 +573,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@iconify-json/fluent-emoji@npm:^1.2.7":
+  version: 1.2.7
+  resolution: "@iconify-json/fluent-emoji@npm:1.2.7"
+  dependencies:
+    "@iconify/types": "npm:*"
+  checksum: 10c0/9336818ebefa1f47bd04e371a366bedff24eccc53799550049f20fb096991eeeb0c0ce0d4bc81cfd6973ef7664ff22c238739707a77d14b47c75a493d927b14a
+  languageName: node
+  linkType: hard
+
+"@iconify-json/tabler@npm:^1.2.23":
+  version: 1.2.23
+  resolution: "@iconify-json/tabler@npm:1.2.23"
+  dependencies:
+    "@iconify/types": "npm:*"
+  checksum: 10c0/1abf5aa54c381b7ff0b590d5ef513bec8b30029732118eef08cb8c8bddfce3ce65a1f8fffc266e94fcd02a6f802653b9282ced722e2c87f54ed6e4e25701cccb
+  languageName: node
+  linkType: hard
+
 "@iconify/collections@npm:^1.0.608":
   version: 1.0.614
   resolution: "@iconify/collections@npm:1.0.614"
@@ -5801,6 +5819,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "portfolio@workspace:."
   dependencies:
+    "@iconify-json/fluent-emoji": "npm:^1.2.7"
+    "@iconify-json/tabler": "npm:^1.2.23"
     "@nuxt/fonts": "npm:0.11.4"
     "@nuxt/icon": "npm:2.1.0"
     "@nuxt/image": "npm:2.0.0"
