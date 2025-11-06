@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   modules: ['@nuxt/fonts', '@nuxt/icon', '@nuxt/image', '@unocss/nuxt'],
   app: {
     head: {
-      title: 'mylu0x',
+      title: 'Mylu',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' }
