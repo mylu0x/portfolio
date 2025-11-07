@@ -122,7 +122,7 @@ const lang = ref<langs>('en');
       </template>
       <template v-else-if="lang === 'fr'">
         <p class="text-slate-7">
-          <strong>Salut !</strong> Je m'appelle <strong>Mylu</strong> <small class="text-slate-6">(se prononce /mɨlu/)</small>
+          <strong>Salut!</strong> Je m'appelle <strong>Mylu</strong> <small class="text-slate-6">(se prononce /mɨlu/)</small>
           <span class="text-slate-8">, une débutante en développement front-end.</span>
         </p>
         <div class="text-gray-6">
