@@ -1,7 +1,7 @@
 <script setup lang="ts">
-type langs = 'en' | 'ja' | 'de' | 'es' | 'fr';
+type Langs = 'en' | 'ja' | 'de' | 'es' | 'fr';
 
-const lang = ref<langs>('en');
+const lang = ref<Langs>('en');
 </script>
 
 <template>
