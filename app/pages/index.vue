@@ -5,7 +5,7 @@ const lang = ref<langs>('en');
 </script>
 
 <template>
-  <section class="my-42px flex flex-col gap-5px">
+  <section class="my-42px flex flex-col gap-8px">
     <h1>
       <span class="text-38px font-600 text-shadow-sm mr-16px">Hey There!</span>
       <span class="text-14px font-500 text-gray-7">
@@ -20,7 +20,7 @@ const lang = ref<langs>('en');
         <button @click="lang = 'fr'">Français</button>
       </span>
     </h1>
-    <div class="flex flex-col gap-12px">
+    <div class="flex flex-col gap-16px">
       <template v-if="lang === 'en'">
         <p class="text-slate-7">
           <strong>Hey!</strong> My name is <strong>Mylu</strong> <small class="text-slate-6">(pronounced as /mɨlu/)</small>
