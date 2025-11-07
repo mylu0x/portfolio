@@ -151,11 +151,11 @@ const lang = ref<langs>('en');
 
 <style scoped>
 strong {
-  @apply font-600 text-gray-7;
+  @apply font-600 text-gray-8;
 }
 
 a {
-  @apply text-gray-7 underline transition-all-50 underline-(dotted 1px gray-5) hover:underline-gray-7 hover:text-black font-500;
+  @apply text-gray-8 underline transition-all-50 underline-(dotted 1px gray-5) hover:underline-gray-7 hover:text-black font-500;
 }
 
 ul {
