@@ -1,5 +1,5 @@
 <script setup lang="ts">
-type langs = 'en' | 'ja' | 'de';
+type langs = 'en' | 'ja' | 'de' | 'es' | 'fr';
 
 const lang = ref<langs>('en');
 </script>
@@ -14,6 +14,10 @@ const lang = ref<langs>('en');
         <button @click="lang = 'ja'">日本語</button>
         /
         <button @click="lang = 'de'">Deutsch</button>
+        /
+        <button @click="lang = 'es'">Español</button>
+        /
+        <button @click="lang = 'fr'">Français</button>
       </span>
     </h1>
     <div class="flex flex-col gap-12px">
@@ -84,6 +88,56 @@ const lang = ref<langs>('en');
         </div>
         <div class="text-gray-7">
           <p>Finde mich auf:</p>
+          <p class="flex gap-8px">
+            <a href="https://github.com/mylu0x" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://misskey.io/@mylu0x" target="_blank" rel="noopener noreferrer">Misskey.io</a>
+            <a href="https://zenn.dev/mylu0x" target="_blank" rel="noopener noreferrer">Zenn</a>
+          </p>
+        </div>
+      </template>
+      <template v-else-if="lang === 'es'">
+        <p class="text-slate-7 text-shadow-sm">
+          <strong>¡Hola!</strong> Mi nombre es <strong>Mylu</strong> <small class="text-slate-6">(se pronuncia /mɨlu/)</small>
+          <span class="text-slate-8">, una desarrolladora front-end principiante.</span>
+        </p>
+        <div class="text-gray-6">
+          <p>
+            Principalmente utilizo
+            <a href="https://vuejs.org" target="_blank" rel="noopener noreferrer">Vue.js</a>,
+            <a href="https://nuxt.com" target="_blank" rel="noopener noreferrer">Nuxt</a> y
+            <a href="https://unocss.dev" target="_blank" rel="noopener noreferrer">UnoCSS</a>
+            para <strong>mis proyectos de front-end</strong>.
+          </p>
+          <p>Fuera de la programación, me encanta escuchar <strong>música</strong> y jugar juegos como <strong><i>Fallout 4</i></strong>.</p>
+          <p>Soy cuidadosa en todo lo que hago, aunque a veces puedo ser indecisa.</p>
+        </div>
+        <div class="text-gray-7">
+          <p>Encuéntrame en:</p>
+          <p class="flex gap-8px">
+            <a href="https://github.com/mylu0x" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://misskey.io/@mylu0x" target="_blank" rel="noopener noreferrer">Misskey.io</a>
+            <a href="https://zenn.dev/mylu0x" target="_blank" rel="noopener noreferrer">Zenn</a>
+          </p>
+        </div>
+      </template>
+      <template v-else-if="lang === 'fr'">
+        <p class="text-slate-7 text-shadow-sm">
+          <strong>Salut !</strong> Je m'appelle <strong>Mylu</strong> <small class="text-slate-6">(se prononce /mɨlu/)</small>
+          <span class="text-slate-8">, une débutante en développement front-end.</span>
+        </p>
+        <div class="text-gray-6">
+          <p>
+            J'utilise principalement
+            <a href="https://vuejs.org" target="_blank" rel="noopener noreferrer">Vue.js</a>,
+            <a href="https://nuxt.com" target="_blank" rel="noopener noreferrer">Nuxt</a> et
+            <a href="https://unocss.dev" target="_blank" rel="noopener noreferrer">UnoCSS</a>
+            pour <strong>mes projets front-end</strong>.
+          </p>
+          <p>En dehors du code, j'adore écouter de la <strong>musique</strong> et jouer à des jeux comme <strong><i>Fallout 4</i></strong>.</p>
+          <p>Je suis prudente dans tout ce que je fais, mais je peux parfois être indécise.</p>
+        </div>
+        <div class="text-gray-7">
+          <p>Retrouvez-moi sur :</p>
           <p class="flex gap-8px">
             <a href="https://github.com/mylu0x" target="_blank" rel="noopener noreferrer">GitHub</a>
             <a href="https://misskey.io/@mylu0x" target="_blank" rel="noopener noreferrer">Misskey.io</a>
