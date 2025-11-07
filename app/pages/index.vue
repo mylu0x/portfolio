@@ -7,7 +7,7 @@ const lang = ref<langs>('en');
 <template>
   <section class="my-42px flex flex-col gap-5px">
     <h1>
-      <span class="text-38px font-700 text-shadow-sm mr-16px">Hey There!</span>
+      <span class="text-38px font-600 text-shadow-sm mr-16px">Hey There!</span>
       <span class="text-14px font-500 text-gray-7">
         <button @click="lang = 'en'">English</button>
         /
@@ -22,7 +22,7 @@ const lang = ref<langs>('en');
     </h1>
     <div class="flex flex-col gap-12px">
       <template v-if="lang === 'en'">
-        <p class="text-slate-7 text-shadow-sm">
+        <p class="text-slate-7">
           <strong>Hey!</strong> My name is <strong>Mylu</strong> <small class="text-slate-6">(pronounced as /mɨlu/)</small>
           <span class="text-slate-8">, a newbie front-end developer.</span>
         </p>
@@ -47,7 +47,7 @@ const lang = ref<langs>('en');
         </div>
       </template>
       <template v-else-if="lang === 'ja'">
-        <p class="text-slate-7 text-shadow-sm">
+        <p class="text-slate-7">
           <strong>Hey!</strong> My name is <strong>Mylu</strong> <small class="text-slate-6">(pronounced as /mɨlu/)</small>
           <span class="text-slate-8">, a newbie front-end developer.</span>
         </p>
@@ -71,7 +71,7 @@ const lang = ref<langs>('en');
         </div>
       </template>
       <template v-else-if="lang === 'de'">
-        <p class="text-slate-7 text-shadow-sm">
+        <p class="text-slate-7">
           <strong>Hallo!</strong> Mein Name ist <strong>Mylu</strong> <small class="text-slate-6">(ausgesprochen /mɨlu/)</small>
           <span class="text-slate-8">, ein Anfänger im Front-End-Development.</span>
         </p>
@@ -96,7 +96,7 @@ const lang = ref<langs>('en');
         </div>
       </template>
       <template v-else-if="lang === 'es'">
-        <p class="text-slate-7 text-shadow-sm">
+        <p class="text-slate-7">
           <strong>¡Hola!</strong> Mi nombre es <strong>Mylu</strong> <small class="text-slate-6">(se pronuncia /mɨlu/)</small>
           <span class="text-slate-8">, una desarrolladora front-end principiante.</span>
         </p>
@@ -121,7 +121,7 @@ const lang = ref<langs>('en');
         </div>
       </template>
       <template v-else-if="lang === 'fr'">
-        <p class="text-slate-7 text-shadow-sm">
+        <p class="text-slate-7">
           <strong>Salut !</strong> Je m'appelle <strong>Mylu</strong> <small class="text-slate-6">(se prononce /mɨlu/)</small>
           <span class="text-slate-8">, une débutante en développement front-end.</span>
         </p>
