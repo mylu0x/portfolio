@@ -134,22 +134,22 @@ const lang = ref<Langs>('en');
       </template>
       <template v-else-if="lang === 'ko'">
         <p class="text-slate-7">
-          <strong>Hey!</strong> 제 이름은 <strong>Mylu</strong> <small class="text-slate-6">(/mɨlu/로 발음합니다)</small>
-          <span class="text-slate-8">, 프론트엔드 개발을 막 시작한 초보자입니다.</span>
+          <strong>안녕하세요!</strong> 제 이름은 <strong>Mylu</strong> <small class="text-slate-6">(/mɨlu/로 발음합니다)</small>
+          <span class="text-slate-8">, 프론트엔드 개발을 이제 막 시작한 초보자이기도 합니다.</span>
         </p>
         <div class="text-gray-6">
           <p>
-            <strong>프론트엔드 개발</strong>에는 주로
+            <strong>프론트엔드 개발</strong>에서는 주로
             <a href="https://vuejs.org" target="_blank" rel="noopener noreferrer">Vue.js</a>,
             <a href="https://nuxt.com" target="_blank" rel="noopener noreferrer">Nuxt</a>, 그리고
             <a href="https://unocss.dev" target="_blank" rel="noopener noreferrer">UnoCSS</a>
             를 사용하고 있습니다.
           </p>
           <p>그 외에도 음악을 듣거나 <strong>Fallout 4</strong> 같은 게임을 즐기는 것을 좋아합니다.</p>
-          <p>무엇이든 신중하게 접근하지만, 동시에 조금은 우유부단한 편이에요...</p>
+          <p>또 많이 신중한 편이지만, 동시에 조금은 우유부단한 편이에요...</p>
         </div>
         <div class="text-gray-7">
-          <p>다음에서 찾아보세요:</p>
+          <p>저에 대한 자세한 내용은 아래 링크 참고해서 알아보세요:</p>
           <p class="flex gap-8px">
             <a href="https://github.com/mylu0x" target="_blank" rel="noopener noreferrer">GitHub</a>
             <a href="https://misskey.io/@mylu0x" target="_blank" rel="noopener noreferrer">Misskey.io</a>
