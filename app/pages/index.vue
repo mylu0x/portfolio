@@ -149,6 +149,7 @@ const lang = ref<Langs>('en');
           <p>무엇이든 신중하게 접근하지만, 동시에 조금은 우유부단한 편이에요...</p>
         </div>
         <div class="text-gray-7">
+          <p>다음에서 찾아보세요:</p>
           <p class="flex gap-8px">
             <a href="https://github.com/mylu0x" target="_blank" rel="noopener noreferrer">GitHub</a>
             <a href="https://misskey.io/@mylu0x" target="_blank" rel="noopener noreferrer">Misskey.io</a>
@@ -172,6 +173,7 @@ const lang = ref<Langs>('en');
           <p>我对任何事情都很谨慎，但有时候也有点优柔寡断...</p>
         </div>
         <div class="text-gray-7">
+          <p>在以下找到我：</p>
           <p class="flex gap-8px">
             <a href="https://github.com/mylu0x" target="_blank" rel="noopener noreferrer">GitHub</a>
             <a href="https://misskey.io/@mylu0x" target="_blank" rel="noopener noreferrer">Misskey.io</a>
@@ -195,6 +197,7 @@ const lang = ref<Langs>('en');
           <p>我對任何事情都很謹慎，但同時也有點優柔寡斷...</p>
         </div>
         <div class="text-gray-7">
+          <p>在這裡找到我</p>
           <p class="flex gap-8px">
             <a href="https://github.com/mylu0x" target="_blank" rel="noopener noreferrer">GitHub</a>
             <a href="https://misskey.io/@mylu0x" target="_blank" rel="noopener noreferrer">Misskey.io</a>
@@ -218,6 +221,7 @@ const lang = ref<Langs>('en');
           <p>Podchodzę do wszystkiego ostrożnie, ale czasem jestem też niezdecydowany...</p>
         </div>
         <div class="text-gray-7">
+          <p>Znajdź mnie na:</p>
           <p class="flex gap-8px">
             <a href="https://github.com/mylu0x" target="_blank" rel="noopener noreferrer">GitHub</a>
             <a href="https://misskey.io/@mylu0x" target="_blank" rel="noopener noreferrer">Misskey.io</a>
@@ -241,6 +245,7 @@ const lang = ref<Langs>('en');
           <p>Я обережний у всьому, але іноді можу бути трохи невпевненим...</p>
         </div>
         <div class="text-gray-7">
+          <p>Знайдіть мене на:</p>
           <p class="flex gap-8px">
             <a href="https://github.com/mylu0x" target="_blank" rel="noopener noreferrer">GitHub</a>
             <a href="https://misskey.io/@mylu0x" target="_blank" rel="noopener noreferrer">Misskey.io</a>
@@ -264,6 +269,7 @@ const lang = ref<Langs>('en');
           <p>Я осторожен во всем, но иногда могу быть нерешительным...</p>
         </div>
         <div class="text-gray-7">
+          <p>Найдите меня на:</p>
           <p class="flex gap-8px">
             <a href="https://github.com/mylu0x" target="_blank" rel="noopener noreferrer">GitHub</a>
             <a href="https://misskey.io/@mylu0x" target="_blank" rel="noopener noreferrer">Misskey.io</a>
@@ -288,6 +294,7 @@ const lang = ref<Langs>('en');
           <p>मैं किसी भी चीज़ के प्रति सावधान हूँ, लेकिन कभी-कभी थोड़ा अनिर्णयशील भी हूँ...</p>
         </div>
         <div class="text-gray-7">
+          <p>मुझे यहाँ देखें:</p>
           <p class="flex gap-8px">
             <a href="https://github.com/mylu0x" target="_blank" rel="noopener noreferrer">GitHub</a>
             <a href="https://misskey.io/@mylu0x" target="_blank" rel="noopener noreferrer">Misskey.io</a>
