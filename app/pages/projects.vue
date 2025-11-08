@@ -17,40 +17,10 @@ type Response = {
   repos: Repo[]
 }
 
-// const myluRepos: Response = await $fetch('https://ungh.cc/users/mylu0x/repos');
-const myluRepos: Response = {
-  repos: [
-    {
-      id: 1054011320,
-      name: "mylu0x",
-      repo: "mylu0x/mylu0x",
-      description: "Profile",
-      createdAt: "2025-09-10T08:39:28Z",
-      updatedAt: "2025-09-27T04:56:34Z",
-      pushedAt: "2025-09-11T08:15:29Z",
-      stars: 1,
-      watchers: 1,
-      forks: 0,
-      defaultBranch: "main"
-    },
-    {
-      id: 1091484223,
-      name: "portfolio",
-      repo: "mylu0x/portfolio",
-      description: "👋 My Portfolio",
-      createdAt: "2025-11-07T04:39:34Z",
-      updatedAt: "2025-11-08T01:53:13Z",
-      pushedAt: "2025-11-08T01:53:09Z",
-      stars: 0,
-      watchers: 0,
-      forks: 0,
-      defaultBranch: "main"
-    }
-  ]
-};
+const myluRepos: Response = await $fetch('https://ungh.cc/users/mylu0x/repos');
 
 onMounted(async () => {
-  console.log(myluRepos);
+  console.info("Repositories fetched successfully", myluRepos);
 });
 </script>
 
