@@ -18,10 +18,6 @@ type Response = {
 }
 
 const myluRepos: Response = await $fetch('https://ungh.cc/users/mylu0x/repos');
-
-onMounted(async () => {
-  console.info("Repositories fetched successfully", myluRepos);
-});
 </script>
 
 <template>
