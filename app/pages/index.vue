@@ -35,7 +35,7 @@ const lang = ref<Langs>('en');
             for <strong>my front-end projects</strong>.
           </p>
           <p>Outside of coding, I love listening to <strong>music</strong> and playing games such as <strong><i>Fallout 4</i></strong>.</p>
-          <p>I am careful in everything I do, yet I can be indecisive at times.</p>
+          <p>I am cautious about everything, but at the same time, I am also indecisive.</p>
         </div>
         <div class="text-gray-7">
           <p>Find me on:</p>
@@ -84,7 +84,7 @@ const lang = ref<Langs>('en');
             für <strong>meine Front-End-Projekte</strong>.
           </p>
           <p>Außerhalb des Programmierens höre ich gerne <strong>Musik</strong> und spiele Spiele wie <strong><i>Fallout 4</i></strong>.</p>
-          <p>Ich bin in allem, was ich tue, sorgfältig, kann aber manchmal unentschlossen sein.</p>
+          <p>Ich bin bei allem vorsichtig, aber gleichzeitig auch unentschlossen..</p>
         </div>
         <div class="text-gray-7">
           <p>Finde mich auf:</p>
@@ -109,7 +109,7 @@ const lang = ref<Langs>('en');
             para <strong>mis proyectos de front-end</strong>.
           </p>
           <p>Fuera de la programación, me encanta escuchar <strong>música</strong> y jugar juegos como <strong><i>Fallout 4</i></strong>.</p>
-          <p>Soy cuidadosa en todo lo que hago, aunque a veces puedo ser indecisa.</p>
+          <p>Soy cuidadoso con todo, pero al mismo tiempo también soy indeciso.</p>
         </div>
         <div class="text-gray-7">
           <p>Encuéntrame en:</p>
@@ -134,7 +134,7 @@ const lang = ref<Langs>('en');
             pour <strong>mes projets front-end</strong>.
           </p>
           <p>En dehors du code, j'adore écouter de la <strong>musique</strong> et jouer à des jeux comme <strong><i>Fallout 4</i></strong>.</p>
-          <p>Je suis prudente dans tout ce que je fais, mais je peux parfois être indécise.</p>
+          <p>Je suis prudent dans tout, mais en même temps, je suis aussi indécis.</p>
         </div>
         <div class="text-gray-7">
           <p>Retrouvez-moi sur :</p>
