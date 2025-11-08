@@ -30,6 +30,7 @@ const myluRepos: Response = await $fetch('https://ungh.cc/users/mylu0x/repos');
       <h2 class="mb-4px flex items-center gap-3px">
         <Icon name="tabler:brand-github-filled" class="text-gray-7" />
         <span class="font-500 text-gray-8">GitHub Repositories</span>
+        <span class="ml-auto text-14px font-500 text-gray-7">This list may not be up to date.</span>
       </h2>
       <div class="flex flex-col gap-12px">
         <RepoCard v-for="repo in myluRepos.repos" :key="repo.id" :name="repo.name" :repo="repo.repo" :desc="repo.description" :stars="repo.stars" :forks="repo.forks" />
