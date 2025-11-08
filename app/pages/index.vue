@@ -1,5 +1,5 @@
 <script setup lang="ts">
-type Langs = 'en' | 'ja' | 'de' | 'es' | 'fr';
+type Langs = 'en' | 'ja' | 'de' | 'es' | 'fr' | 'ko' | 'zh-CN' | 'zh-TW';
 
 const lang = ref<Langs>('en');
 </script>
@@ -132,18 +132,94 @@ const lang = ref<Langs>('en');
           </p>
         </div>
       </template>
+      <template v-else-if="lang === 'ko'">
+        <p class="text-slate-7">
+          <strong>Hey!</strong> 제 이름은 <strong>Mylu</strong> <small class="text-slate-6">(/mɨlu/로 발음합니다)</small>
+          <span class="text-slate-8">, 프론트엔드 개발을 막 시작한 초보자입니다.</span>
+        </p>
+        <div class="text-gray-6">
+          <p>
+            <strong>프론트엔드 개발</strong>에는 주로
+            <a href="https://vuejs.org" target="_blank" rel="noopener noreferrer">Vue.js</a>,
+            <a href="https://nuxt.com" target="_blank" rel="noopener noreferrer">Nuxt</a>, 그리고
+            <a href="https://unocss.dev" target="_blank" rel="noopener noreferrer">UnoCSS</a>
+            를 사용하고 있습니다.
+          </p>
+          <p>그 외에도 음악을 듣거나 <strong>Fallout 4</strong> 같은 게임을 즐기는 것을 좋아합니다.</p>
+          <p>무엇이든 신중하게 접근하지만, 동시에 조금은 우유부단한 편이에요...</p>
+        </div>
+        <div class="text-gray-7">
+          <p class="flex gap-8px">
+            <a href="https://github.com/mylu0x" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://misskey.io/@mylu0x" target="_blank" rel="noopener noreferrer">Misskey.io</a>
+            <a href="https://zenn.dev/mylu0x" target="_blank" rel="noopener noreferrer">Zenn</a>
+          </p>
+        </div>
+      </template>
+      <template v-else-if="lang === 'zh-CN'">
+        <p class="text-slate-7">
+          <strong>Hey!</strong> 我叫 <strong>Mylu</strong> <small class="text-slate-6">(发音为 /mɨlu/)</small>
+          <span class="text-slate-8">，是一名刚入门的前端开发者。</span>
+        </p>
+        <div class="text-gray-6">
+          <p>
+            在<strong>前端开发</strong>方面，我主要使用
+            <a href="https://vuejs.org" target="_blank" rel="noopener noreferrer">Vue.js</a>、
+            <a href="https://nuxt.com" target="_blank" rel="noopener noreferrer">Nuxt</a> 和
+            <a href="https://unocss.dev" target="_blank" rel="noopener noreferrer">UnoCSS</a>。
+          </p>
+          <p>此外，我喜欢听音乐，也喜欢玩 <strong>Fallout 4</strong> 等游戏。</p>
+          <p>我对任何事情都很谨慎，但有时候也有点优柔寡断...</p>
+        </div>
+        <div class="text-gray-7">
+          <p class="flex gap-8px">
+            <a href="https://github.com/mylu0x" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://misskey.io/@mylu0x" target="_blank" rel="noopener noreferrer">Misskey.io</a>
+            <a href="https://zenn.dev/mylu0x" target="_blank" rel="noopener noreferrer">Zenn</a>
+          </p>
+        </div>
+      </template>
+      <template v-else-if="lang === 'zh-TW'">
+        <p class="text-slate-7">
+          <strong>Hey!</strong> 我叫 <strong>Mylu</strong> <small class="text-slate-6">(發音為 /mɨlu/)</small>
+          <span class="text-slate-8">，是一名剛開始接觸前端開發的新手。</span>
+        </p>
+        <div class="text-gray-6">
+          <p>
+            在<strong>前端開發</strong>方面，我主要使用
+            <a href="https://vuejs.org" target="_blank" rel="noopener noreferrer">Vue.js</a>、
+            <a href="https://nuxt.com" target="_blank" rel="noopener noreferrer">Nuxt</a> 和
+            <a href="https://unocss.dev" target="_blank" rel="noopener noreferrer">UnoCSS</a>。
+          </p>
+          <p>除此之外，我喜歡聽音樂，也喜歡玩 <strong>Fallout 4</strong> 這類遊戲。</p>
+          <p>我對任何事情都很謹慎，但同時也有點優柔寡斷...</p>
+        </div>
+        <div class="text-gray-7">
+          <p class="flex gap-8px">
+            <a href="https://github.com/mylu0x" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://misskey.io/@mylu0x" target="_blank" rel="noopener noreferrer">Misskey.io</a>
+            <a href="https://zenn.dev/mylu0x" target="_blank" rel="noopener noreferrer">Zenn</a>
+          </p>
+        </div>
+      </template>
     </div>
     <div class="text-14px font-500 text-gray-7">
-        <button @click="lang = 'en'">English</button>
-        /
-        <button @click="lang = 'ja'">日本語</button>
-        /
-        <button @click="lang = 'de'">Deutsch</button>
-        /
-        <button @click="lang = 'es'">Español</button>
-        /
-        <button @click="lang = 'fr'">Français</button>
-      </div>
+      <button @click="lang = 'en'">English</button>
+      /
+      <button @click="lang = 'ja'">日本語</button>
+      /
+      <button @click="lang = 'de'">Deutsch</button>
+      /
+      <button @click="lang = 'es'">Español</button>
+      /
+      <button @click="lang = 'fr'">Français</button>
+      /
+      <button @click="lang = 'ko'">한국어</button>
+      /
+      <button @click="lang = 'zh-CN'">简体中文</button>
+      /
+      <button @click="lang = 'zh-TW'">繁體中文</button>
+    </div>
   </section>
 </template>
 
