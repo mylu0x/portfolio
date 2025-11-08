@@ -1,5 +1,5 @@
 <script setup lang="ts">
-type Langs = 'en' | 'ja' | 'de' | 'es' | 'fr' | 'ko' | 'zh-CN' | 'zh-TW' | 'pl' | 'uk' | 'ru';
+type Langs = 'en' | 'ja' | 'de' | 'es' | 'fr' | 'ko' | 'zh-CN' | 'zh-TW' | 'pl' | 'uk' | 'ru' | 'hi';
 
 const lang = ref<Langs>('en');
 </script>
@@ -271,6 +271,30 @@ const lang = ref<Langs>('en');
           </p>
         </div>
       </template>
+      <template v-else-if="lang === 'hi'">
+        <p class="text-slate-7">
+          <strong>नमस्ते!</strong> मेरा नाम <strong>Mylu</strong> <small class="text-slate-6">(उच्चारण /mɨlu/)</small>
+          <span class="text-slate-8">, मैं एक शुरुआत करने वाला फ्रंट-एंड डेवलपर हूँ।</span>
+        </p>
+        <div class="text-gray-6">
+          <p>
+            <strong>फ्रंट-एंड डेवलपमेंट</strong> में मैं मुख्य रूप से
+            <a href="https://vuejs.org" target="_blank" rel="noopener noreferrer">Vue.js</a>,
+            <a href="https://nuxt.com" target="_blank" rel="noopener noreferrer">Nuxt</a> और
+            <a href="https://unocss.dev" target="_blank" rel="noopener noreferrer">UnoCSS</a>
+            का उपयोग करता हूँ।
+          </p>
+          <p>इसके अलावा, मुझे संगीत सुनना और <strong>Fallout 4</strong> जैसी गेम्स खेलना पसंद है।</p>
+          <p>मैं किसी भी चीज़ के प्रति सावधान हूँ, लेकिन कभी-कभी थोड़ा अनिर्णयशील भी हूँ...</p>
+        </div>
+        <div class="text-gray-7">
+          <p class="flex gap-8px">
+            <a href="https://github.com/mylu0x" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://misskey.io/@mylu0x" target="_blank" rel="noopener noreferrer">Misskey.io</a>
+            <a href="https://zenn.dev/mylu0x" target="_blank" rel="noopener noreferrer">Zenn</a>
+          </p>
+        </div>
+      </template>
     </div>
     <div class="text-14px font-500 text-gray-7">
       <button @click="lang = 'en'">English</button>
@@ -294,6 +318,8 @@ const lang = ref<Langs>('en');
       <button @click="lang = 'uk'">Українська</button>
       /
       <button @click="lang = 'ru'">Русский</button>
+      /
+      <button @click="lang = 'hi'">हिन्दी</button>
     </div>
   </section>
 </template>
