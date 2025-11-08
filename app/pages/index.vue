@@ -1,5 +1,5 @@
 <script setup lang="ts">
-type Langs = 'en' | 'ja' | 'de' | 'es' | 'fr' | 'ko' | 'zh-CN' | 'zh-TW';
+type Langs = 'en' | 'ja' | 'de' | 'es' | 'fr' | 'ko' | 'zh-CN' | 'zh-TW' | 'pl' | 'uk' | 'ru';
 
 const lang = ref<Langs>('en');
 </script>
@@ -202,6 +202,75 @@ const lang = ref<Langs>('en');
           </p>
         </div>
       </template>
+      <template v-else-if="lang === 'pl'">
+        <p class="text-slate-7">
+          <strong>Cześć!</strong> Nazywam się <strong>Mylu</strong> <small class="text-slate-6">(wymawia się /mɨlu/)</small>
+          <span class="text-slate-8">, jestem początkującym front-end developerem.</span>
+        </p>
+        <div class="text-gray-6">
+          <p>
+            W <strong>front-end development</strong> głównie używam
+            <a href="https://vuejs.org" target="_blank" rel="noopener noreferrer">Vue.js</a>,
+            <a href="https://nuxt.com" target="_blank" rel="noopener noreferrer">Nuxt</a> oraz
+            <a href="https://unocss.dev" target="_blank" rel="noopener noreferrer">UnoCSS</a>.
+          </p>
+          <p>Poza tym lubię słuchać muzyki i grać w gry, takie jak <strong>Fallout 4</strong>.</p>
+          <p>Podchodzę do wszystkiego ostrożnie, ale czasem jestem też niezdecydowany...</p>
+        </div>
+        <div class="text-gray-7">
+          <p class="flex gap-8px">
+            <a href="https://github.com/mylu0x" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://misskey.io/@mylu0x" target="_blank" rel="noopener noreferrer">Misskey.io</a>
+            <a href="https://zenn.dev/mylu0x" target="_blank" rel="noopener noreferrer">Zenn</a>
+          </p>
+        </div>
+      </template>
+      <template v-else-if="lang === 'uk'">
+        <p class="text-slate-7">
+          <strong>Привіт!</strong> Мене звати <strong>Mylu</strong> <small class="text-slate-6">(вимовляється /mɨlu/)</small>
+          <span class="text-slate-8">, я початківець фронтенд-розробник.</span>
+        </p>
+        <div class="text-gray-6">
+          <p>
+            У <strong>front-end розробці</strong> я в основному використовую
+            <a href="https://vuejs.org" target="_blank" rel="noopener noreferrer">Vue.js</a>,
+            <a href="https://nuxt.com" target="_blank" rel="noopener noreferrer">Nuxt</a> та
+            <a href="https://unocss.dev" target="_blank" rel="noopener noreferrer">UnoCSS</a>.
+          </p>
+          <p>Також люблю слухати музику та грати у такі ігри, як <strong>Fallout 4</strong>.</p>
+          <p>Я обережний у всьому, але іноді можу бути трохи невпевненим...</p>
+        </div>
+        <div class="text-gray-7">
+          <p class="flex gap-8px">
+            <a href="https://github.com/mylu0x" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://misskey.io/@mylu0x" target="_blank" rel="noopener noreferrer">Misskey.io</a>
+            <a href="https://zenn.dev/mylu0x" target="_blank" rel="noopener noreferrer">Zenn</a>
+          </p>
+        </div>
+      </template>
+      <template v-else-if="lang === 'ru'">
+        <p class="text-slate-7">
+          <strong>Привет!</strong> Меня зовут <strong>Mylu</strong> <small class="text-slate-6">(произносится /mɨlu/)</small>
+          <span class="text-slate-8">, я начинающий фронтенд-разработчик.</span>
+        </p>
+        <div class="text-gray-6">
+          <p>
+            В <strong>фронтенд-разработке</strong> я в основном использую
+            <a href="https://vuejs.org" target="_blank" rel="noopener noreferrer">Vue.js</a>,
+            <a href="https://nuxt.com" target="_blank" rel="noopener noreferrer">Nuxt</a> и
+            <a href="https://unocss.dev" target="_blank" rel="noopener noreferrer">UnoCSS</a>.
+          </p>
+          <p>Кроме того, мне нравится слушать музыку и играть в игры, например <strong>Fallout 4</strong>.</p>
+          <p>Я осторожен во всем, но иногда могу быть нерешительным...</p>
+        </div>
+        <div class="text-gray-7">
+          <p class="flex gap-8px">
+            <a href="https://github.com/mylu0x" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://misskey.io/@mylu0x" target="_blank" rel="noopener noreferrer">Misskey.io</a>
+            <a href="https://zenn.dev/mylu0x" target="_blank" rel="noopener noreferrer">Zenn</a>
+          </p>
+        </div>
+      </template>
     </div>
     <div class="text-14px font-500 text-gray-7">
       <button @click="lang = 'en'">English</button>
@@ -219,6 +288,12 @@ const lang = ref<Langs>('en');
       <button @click="lang = 'zh-CN'">简体中文</button>
       /
       <button @click="lang = 'zh-TW'">繁體中文</button>
+      /
+      <button @click="lang = 'pl'">Polski</button>
+      /
+      <button @click="lang = 'uk'">Українська</button>
+      /
+      <button @click="lang = 'ru'">Русский</button>
     </div>
   </section>
 </template>
