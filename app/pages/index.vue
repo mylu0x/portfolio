@@ -6,20 +6,7 @@ const lang = ref<Langs>('en');
 
 <template>
   <section class="my-52px flex flex-col gap-16px">
-    <h1>
-      <span class="text-38px font-700 text-shadow-sm mr-16px">Hey There!</span>
-      <span class="text-14px font-500 text-gray-7">
-        <button @click="lang = 'en'">English</button>
-        /
-        <button @click="lang = 'ja'">日本語</button>
-        /
-        <button @click="lang = 'de'">Deutsch</button>
-        /
-        <button @click="lang = 'es'">Español</button>
-        /
-        <button @click="lang = 'fr'">Français</button>
-      </span>
-    </h1>
+    <h1 class="text-38px font-700 text-shadow-sm">Hey There!</h1>
     <div class="flex flex-col gap-18px">
       <template v-if="lang === 'en'">
         <p class="text-slate-7">
@@ -146,6 +133,17 @@ const lang = ref<Langs>('en');
         </div>
       </template>
     </div>
+    <div class="text-14px font-500 text-gray-7">
+        <button @click="lang = 'en'">English</button>
+        /
+        <button @click="lang = 'ja'">日本語</button>
+        /
+        <button @click="lang = 'de'">Deutsch</button>
+        /
+        <button @click="lang = 'es'">Español</button>
+        /
+        <button @click="lang = 'fr'">Français</button>
+      </div>
   </section>
 </template>
 
