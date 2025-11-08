@@ -9,6 +9,7 @@
     </div>
     <div class="flex items-center gap-18px">
       <HeaderLink text="Home" to="/" />
+      <HeaderLink text="Projects" to="/projects" />
       <HeaderLink text="Articles" to="/articles" />
     </div>
   </header>
